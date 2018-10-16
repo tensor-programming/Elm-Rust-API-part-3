@@ -1,5 +1,5 @@
 use db::Conn as DbConn;
-use rocket_contrib::Json;
+use rocket_contrib::json::Json;
 use super::models::{Book, NewBook};
 use serde_json::Value;
 
@@ -67,6 +67,7 @@ pub fn author(author: String, conn: DbConn) -> Json<Value> {
     }))
 }
 
+
 //#[catch(404)]
 //fn not_found() -> Json<Value> {
 //    Json(json!({
@@ -74,5 +75,4 @@ pub fn author(author: String, conn: DbConn) -> Json<Value> {
 //        "reason": "Resource was not found"
 //    }))
 //}
-//needs to be reworked for current version of rocket. 
-
+//needs to be reworked for current version of rocket.

@@ -27,4 +27,3 @@ rev = "ad0ba0d"
 [patch.crates-io.rocket_contrib]
 git = "https://github.com/SergioBenitez/Rocket.git"
 rev = "ad0ba0d"
-
