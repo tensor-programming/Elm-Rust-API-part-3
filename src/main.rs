@@ -1,5 +1,5 @@
 #![feature(plugin, custom_derive, const_fn, decl_macro, custom_attribute, proc_macro_hygiene)]
-#![allow(unused_attributes)]
+#![allow(proc_macro_derive_resolution_fallback, unused_attributes)]
 
 #[macro_use]
 extern crate diesel;
